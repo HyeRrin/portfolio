@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketLight";
+  src: url("../src/font/GmarketSansTTFLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketMedium";
+  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+* {
+  font-family: "GmarketMedium";
+}
+body {
+  padding-top: 150px;
+  background-color: #eff2f8;
+}
+
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 100px;
+  background-color: white;
+  color: #6a75ca;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e3fd;
+}
+.nav-list {
+  display: flex;
+  justify-content: right;
+}
+.list-link {
+  margin-left: 80px;
+}
+.list-link:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.btn-github {
+  padding: 8px 23px;
+  border-radius: 20px;
+  background-color: #6a75ca;
+  border: solid 2px #6a75ca;
+  color: white;
+}
+.btn-github:hover {
+  background-color: white;
+  border: solid 2px #6a75ca;
+  color: #6a75ca;
+}
+
+/* intro섹션 */
+.cont-intro {
+  margin: 250px 0 350px 0;
+  display: flex;
+  justify-content: center;
+}
+.cont-intro img {
+  width: 270px;
+  height: 270px;
+  margin-right: 40px;
+}
+.txt-title {
+  margin: 55px 0 40px;
+  font-size: 55px;
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  line-height: 58px;
+}
+.btn-more {
+  padding: 8px 27px;
+  border-radius: 20px;
+  background-color: #6a75ca;
+  border: solid 2px #6a75ca;
+  color: white;
+  font-size: 18px;
+}
+.btn-more:hover {
+  background-color: white;
+  border: solid 2px #6a75ca;
+  color: #6a75ca;
+}
+
+/* project섹션 */
+.section-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+/* .section-project h2::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -1px;
+  margin-left: 30px;
+  width: 2px;
+  height: 60px;
+  background-color: #6a75ca;
+} */
+.section-project h2 {
+  margin: 0 auto;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.box-project {
+  margin: 30px auto;
+  display: flex;
+  padding: 35px;
+  width: 1000px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img-project {
+  border-radius: 15px;
+  width: 452px;
+  margin-bottom: 25px;
+}
+
+.btn-detail {
+  cursor: pointer;
+  padding: 10px 172px;
+  border-radius: 15px;
+  border: none;
+  background-color: #6a75ca;
+  border: solid 2px #6a75ca;
+  color: white;
+  font-size: 20px;
+}
+.btn-detail:hover {
+  background-color: white;
+  border: solid 2px #6a75ca;
+  color: #6a75ca;
+}
+.txt-project {
+  text-align: left;
+  margin: 25px 0 0 40px;
+}
+.txt-project h3 {
+  font-family: "GmarketBold";
+  font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+.txt-project dl dt {
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.txt-project dl dd {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* footer */
+#footer {
+  text-align: center;
+}
+#footer h2 {
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.box-footer {
+  width: 100%;
+  background-color: white;
+  padding: 50px 0 70px 0;
+}
+.link-sns ul {
+  display: inline-block;
+  margin: 30px auto;
+}
+.link-sns li {
+  display: inline-block;
+  padding: 35px;
+  font-size: 12px;
+}
+.link-sns li a img {
+  margin-bottom: 10px;
+}
+.img-github,
+.img-velog {
+  width: 65px;
+}
+.box-footer p {
+  color: #6a75ca;
+  margin-top: 50px;
+}
