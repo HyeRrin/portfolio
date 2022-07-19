@@ -207,11 +207,11 @@ body {
   bottom: 60px;
   width: 65px;
   height: 65px;
-  background-image: url(/src/img/btn-moveTop.png);
+  background-image: url(../src/img/btn-moveTop.png);
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 .btn-moveTop:hover {
-  background-image: url(/src/img/btn-moveTop-hover.png);
+  background-image: url(../src/img/btn-moveTop-hover.png);
 }
