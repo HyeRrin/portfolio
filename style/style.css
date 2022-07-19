@@ -62,12 +62,12 @@ body {
   justify-content: center;
 }
 .cont-intro img {
-  width: 270px;
-  height: 270px;
+  width: 230px;
+  /* height: 270px; */
   margin-right: 40px;
 }
 .txt-title {
-  margin: 55px 0 40px;
+  margin: 30px 0 40px;
   font-size: 55px;
   font-family: "GmarketBold";
   color: #6a75ca;
@@ -198,4 +198,20 @@ body {
 .box-footer p {
   color: #6a75ca;
   margin-top: 50px;
+}
+
+/* moveTop 버튼 */
+.btn-moveTop {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 65px;
+  height: 65px;
+  background-image: url(/src/img/btn-moveTop.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-moveTop:hover {
+  background-image: url(/src/img/btn-moveTop-hover.png);
 }
