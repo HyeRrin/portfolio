@@ -129,6 +129,7 @@ body {
 .slide-images img {
   width: 438px;
   height: 438px;
+  border-radius: 20px;
 }
 .btn-next,
 .btn-next:active,
@@ -155,11 +156,11 @@ body {
   color: #6a75ca;
 }
 .btn-prev {
-  left: 12px;
+  left: 15px;
   top: 50%;
 }
 .btn-next {
-  right: 12px;
+  right: 15px;
   top: 50%;
 }
 .info-about {
