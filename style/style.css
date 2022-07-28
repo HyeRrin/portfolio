@@ -90,6 +90,67 @@ body {
   color: #6a75ca;
 }
 
+/* about섹션 */
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 100px 0 130px 0;
+  margin: 0 0 126px 0;
+}
+.section-about h2 {
+  margin: 0 auto;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+.cont-about {
+  display: flex;
+  margin: 0 auto;
+}
+.img-me-1 {
+  width: 438px;
+  border-radius: 50px;
+  margin-right: 70px;
+}
+.txt-about dt {
+  display: inline-block;
+  margin-bottom: 17px;
+  width: 110px;
+  font-size: 22px;
+  font-family: "GmarketBold";
+  color: #6a75ca;
+}
+.txt-about {
+  margin-top: 55px;
+}
+.txt-about dd {
+  display: inline-block;
+  font-size: 22px;
+}
+.btn-about {
+  margin: 45px 0 0 20px;
+}
+.btn-about button {
+  width: 140px;
+  height: 140px;
+  margin: 0 45px 0 0;
+  border-radius: 100%;
+  background-color: #6a75ca;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+.btn-about button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #6a75ca;
+  border: 2px solid #6a75ca;
+}
+
 /* project섹션 */
 .section-project {
   display: flex;
