@@ -3,10 +3,6 @@
   src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "GmarketLight";
-  src: url("../src/font/GmarketSansTTFLight.ttf") format("truetype");
-}
-@font-face {
   font-family: "GmarketMedium";
   src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
 }
