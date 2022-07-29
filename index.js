@@ -67,7 +67,7 @@ document
   .querySelector(".btn-close-diary")
   .addEventListener("click", function () {
     if (모달 == true) {
-      document.querySelector(".modal-background").style.display = "none";
+      document.querySelector(".modal-background-diary").style.display = "none";
       document.body.style.overflow = "unset";
       모달 = false;
     }
@@ -77,7 +77,29 @@ document
   .querySelector(".btn-open-diary")
   .addEventListener("click", function () {
     if (모달 == false) {
-      document.querySelector(".modal-background").style.display = "flex";
+      document.querySelector(".modal-background-diary").style.display = "flex";
+      document.body.style.overflow = "hidden";
+      모달 = true;
+    }
+  });
+
+document
+  .querySelector(".btn-close-personal")
+  .addEventListener("click", function () {
+    if (모달 == true) {
+      document.querySelector(".modal-background-personal").style.display =
+        "none";
+      document.body.style.overflow = "unset";
+      모달 = false;
+    }
+  });
+
+document
+  .querySelector(".btn-open-personal")
+  .addEventListener("click", function () {
+    if (모달 == false) {
+      document.querySelector(".modal-background-personal").style.display =
+        "flex";
       document.body.style.overflow = "hidden";
       모달 = true;
     }

@@ -100,17 +100,18 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: column;
   background-color: white;
-  padding: 100px 0 130px 0;
+  padding: 80px 0 140px 0;
   margin: 0 0 126px 0;
 }
+
 .section-about h2 {
-  margin: 0 auto;
+  margin: 0 auto 100px;
   display: inline-block;
   font-family: "GmarketBold";
   color: #6a75ca;
   font-size: 40px;
-  margin-bottom: 70px;
 }
+
 .cont-about {
   display: flex;
   margin: 0 auto;
@@ -215,8 +216,8 @@ body::-webkit-scrollbar {
   transition: 0.5s ease-out;
 }
 .btn-about button img {
-  width: 40px;
-  margin: 7px auto;
+  width: 43px;
+  margin: 10px auto;
 }
 
 /* project섹션 */
@@ -295,12 +296,12 @@ body::-webkit-scrollbar {
   font-family: "GmarketBold";
   color: #6a75ca;
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .box-footer {
   width: 100%;
   background-color: white;
-  padding: 50px 0 70px 0;
+  padding: 60px 0 70px 0;
 }
 .link-sns ul {
   display: inline-block;
@@ -324,7 +325,8 @@ body::-webkit-scrollbar {
 }
 
 /* 모달 */
-.modal-background {
+.modal-background-diary,
+.modal-background-personal {
   display: none;
   justify-content: center;
   align-items: center;
@@ -337,7 +339,8 @@ body::-webkit-scrollbar {
   bottom: 0;
   left: 0;
 }
-.modal {
+.modal-diary,
+.modal-personal {
   position: absolute;
   top: 20%;
   width: 440px;
@@ -346,27 +349,32 @@ body::-webkit-scrollbar {
   text-align: center;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-.modal h3 {
+.modal-diary h3,
+.modal-personal h3 {
   margin: 40px 0 7px 0;
   font-size: 25px;
   color: #6a75ca;
   font-family: "GmarketBold";
 }
-.modal h4 {
+.modal-diary h4,
+.modal-personal h4 {
   font-size: 20px;
 }
-.modal img {
+.modal-diary img,
+.modal-personal img {
   width: 350px;
   margin: 30px auto;
   border-radius: 15px;
 }
-.modal p {
+.modal-diary p,
+.modal-personal p {
   margin: 0 auto;
   width: 310px;
   font-size: 17px;
   line-height: 24px;
 }
-.btn-close-diary {
+.btn-close-diary,
+.btn-close-personal {
   padding: 8px 140px;
   margin: 25px 0 35px 0;
   background-color: #6a75ca;
@@ -374,7 +382,8 @@ body::-webkit-scrollbar {
   border: none;
   color: white;
 }
-.btn-close-diary:hover {
+.btn-close-diary:hover,
+.btn-close-personal:hover {
   background-color: white;
   color: #6a75ca;
   transition: 0.3s ease-out;
