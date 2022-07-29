@@ -76,8 +76,12 @@
               </div>
             </dl>
             <div class="btn-about">
-              <button>Hobby</button>
-              <button>Likes</button>
+              <button class="btn-open-diary" type="button">
+                <img src="src/img/icon-diary.png" alt="" />Hobby
+              </button>
+              <button class="btn-open-likes" type="button">
+                <img src="src/img/icon-likes.png" alt="" />Likes
+              </button>
             </div>
           </div>
         </div>
@@ -173,6 +177,18 @@
           <p>© 2022 - HyeRin</p>
         </div>
       </footer>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>Hobby</h3>
+          <h4>다이어리 꾸미기</h4>
+          <img src="src/img/img-diary.jpg" alt="다이어리 이미지" />
+          <p>
+            다이어리를 꾸미는 취미를 가지고 있습니다🎀 빈 종이을 저만의 취향으로
+            가득 채우고, 하루를 되돌아보며 일기를 쓰는 것을 좋아해요✍🏻
+          </p>
+          <button type="button" class="btn-close-diary">Close</button>
+        </div>
+      </div>
       <button onclick="moveToTop()" class="btn-moveTop"></button>
       <script src="index.js"></script>
     </main>

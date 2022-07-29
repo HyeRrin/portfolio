@@ -18,6 +18,9 @@ body {
   padding-top: 150px;
   background-color: #eff2f8;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* header */
 #header {
@@ -25,7 +28,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding: 50px 100px;
+  padding: 45px 100px;
   background-color: white;
   color: #6a75ca;
   font-size: 18px;
@@ -202,14 +205,18 @@ body {
   background-color: #6a75ca;
   border: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 .btn-about button:hover {
   cursor: pointer;
-  background-color: white;
-  color: #6a75ca;
-  border: 2px solid #6a75ca;
+  background-color: #c4c8f1;
+  color: #868ecf;
+  /* border: 2px solid #6a75ca; */
   transition: 0.5s ease-out;
+}
+.btn-about button img {
+  width: 40px;
+  margin: 7px auto;
 }
 
 /* project섹션 */
@@ -314,6 +321,64 @@ body {
 .box-footer p {
   color: #6a75ca;
   margin-top: 50px;
+}
+
+/* 모달 */
+.modal-background {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  width: 440px;
+  background-color: #e0e3fd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.modal h3 {
+  margin: 40px 0 7px 0;
+  font-size: 25px;
+  color: #6a75ca;
+  font-family: "GmarketBold";
+}
+.modal h4 {
+  font-size: 20px;
+}
+.modal img {
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+.modal p {
+  margin: 0 auto;
+  width: 310px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.btn-close-diary {
+  padding: 8px 140px;
+  margin: 25px 0 35px 0;
+  background-color: #6a75ca;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+.btn-close-diary:hover {
+  background-color: white;
+  color: #6a75ca;
+  transition: 0.3s ease-out;
+  cursor: pointer;
 }
 
 /* moveTop 버튼 */
