@@ -88,6 +88,7 @@ body {
   background-color: white;
   border: solid 2px #6a75ca;
   color: #6a75ca;
+  transition: 0.7s ease-out;
 }
 
 /* about섹션 */
@@ -120,6 +121,7 @@ body {
   width: 438px;
   height: 438px;
   overflow: hidden;
+  border-radius: 20px;
 }
 .slide-images {
   position: relative;
@@ -129,16 +131,23 @@ body {
 .slide-images img {
   width: 438px;
   height: 438px;
-  border-radius: 20px;
 }
 .btn-next,
 .btn-next:active,
-.btn-next:focus,
+.btn-next:focus {
+  position: absolute;
+  padding: 8px 8px 7px 14px;
+  background-color: #6a75ca;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 100%;
+}
 .btn-prev,
 .btn-prev:active,
 .btn-prev:focus {
   position: absolute;
-  padding: 7px 12px 5px 14px;
+  padding: 8px 14px 7px 8px;
   background-color: #6a75ca;
   color: white;
   border: none;
@@ -154,13 +163,14 @@ body {
   cursor: pointer;
   background-color: white;
   color: #6a75ca;
+  transition: 0.7s ease-out;
 }
 .btn-prev {
-  left: 15px;
+  left: 18px;
   top: 50%;
 }
 .btn-next {
-  right: 15px;
+  right: 18px;
   top: 50%;
 }
 .info-about {
@@ -199,6 +209,7 @@ body {
   background-color: white;
   color: #6a75ca;
   border: 2px solid #6a75ca;
+  transition: 0.5s ease-out;
 }
 
 /* project섹션 */
@@ -319,4 +330,5 @@ body {
 }
 .btn-moveTop:hover {
   background-image: url(../src/img/btn-moveTop-hover.png);
+  transition: 0.5s ease-out;
 }
