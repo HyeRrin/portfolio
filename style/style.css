@@ -325,8 +325,7 @@ body::-webkit-scrollbar {
 }
 
 /* 모달 */
-.modal-background-diary,
-.modal-background-personal {
+.modal-background {
   display: none;
   justify-content: center;
   align-items: center;
@@ -339,8 +338,7 @@ body::-webkit-scrollbar {
   bottom: 0;
   left: 0;
 }
-.modal-diary,
-.modal-personal {
+.modal {
   position: absolute;
   top: 20%;
   width: 440px;
@@ -349,32 +347,27 @@ body::-webkit-scrollbar {
   text-align: center;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-.modal-diary h3,
-.modal-personal h3 {
+.modal h3 {
   margin: 40px 0 7px 0;
   font-size: 25px;
   color: #6a75ca;
   font-family: "GmarketBold";
 }
-.modal-diary h4,
-.modal-personal h4 {
+.modal h4 {
   font-size: 20px;
 }
-.modal-diary img,
-.modal-personal img {
+.modal img {
   width: 350px;
   margin: 30px auto;
   border-radius: 15px;
 }
-.modal-diary p,
-.modal-personal p {
+.modal p {
   margin: 0 auto;
   width: 310px;
   font-size: 17px;
   line-height: 24px;
 }
-.btn-close-diary,
-.btn-close-personal {
+.btn-close {
   padding: 8px 140px;
   margin: 25px 0 35px 0;
   background-color: #6a75ca;
@@ -382,8 +375,7 @@ body::-webkit-scrollbar {
   border: none;
   color: white;
 }
-.btn-close-diary:hover,
-.btn-close-personal:hover {
+.btn-close:hover {
   background-color: white;
   color: #6a75ca;
   transition: 0.3s ease-out;
