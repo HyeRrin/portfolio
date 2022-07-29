@@ -86,3 +86,23 @@ for (let i = 0; i < $btnOpen.length; i++) {
 for (let i = 0; i < $btnOpen.length; i++) {
   funcs[i]();
 }
+
+// 스크롤바
+let scrollTop = 0;
+let bar;
+
+window.onload = function () {
+  bar = document.getElementsByClassName("bar-ing")[0];
+};
+
+window.addEventListener(
+  "scroll",
+  function () {
+    scrollTop = document.documentElement.scrollTop;
+    let per = Math.ceil(
+      (scrollTop / (document.body.scrollHeight - window.outerHeight)) * 100
+    );
+    bar.style.width = per + "%";
+  },
+  false
+);
