@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   right: 0;
-  padding: 45px 110px;
+  padding: 45px 60px;
   background-color: white;
   color: #6a75ca;
   font-size: 18px;
@@ -36,23 +36,24 @@ body::-webkit-scrollbar {
   justify-content: right;
 }
 .list-link {
-  margin-left: 80px;
+  margin-left: 70px;
 }
 .list-link:hover {
   color: black;
   border-bottom: 2px solid black;
 }
-.btn-github {
+.btn-code {
   padding: 8px 23px;
   border-radius: 20px;
   background-color: #6a75ca;
   border: solid 2px #6a75ca;
   color: white;
 }
-.btn-github:hover {
+.btn-code:hover {
   background-color: white;
   border: solid 2px #6a75ca;
   color: #6a75ca;
+  transition: 0.2s ease-out;
 }
 .bar-bg {
   position: absolute;
@@ -112,9 +113,8 @@ body::-webkit-scrollbar {
   flex-direction: column;
   background-color: white;
   padding: 80px 0 140px 0;
-  margin: 0 0 126px 0;
+  margin: 0 0 140px 0;
 }
-
 .section-about h2 {
   margin: 0 auto 100px;
   display: inline-block;
@@ -122,7 +122,6 @@ body::-webkit-scrollbar {
   color: #6a75ca;
   font-size: 40px;
 }
-
 .cont-about {
   display: flex;
   margin: 0 auto;
@@ -236,7 +235,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 300px;
+  margin-bottom: 180px;
 }
 
 .section-project h2 {
@@ -245,7 +244,7 @@ body::-webkit-scrollbar {
   font-family: "GmarketBold";
   color: #6a75ca;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .box-project {
@@ -312,7 +311,7 @@ body::-webkit-scrollbar {
 .box-footer {
   width: 100%;
   background-color: white;
-  padding: 60px 0 70px 0;
+  padding: 80px 0 70px 0;
 }
 .link-sns ul {
   display: inline-block;
