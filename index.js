@@ -4,16 +4,20 @@ let moveToTop = function () {
 };
 
 // 타이핑 효과
-const content = "안녕하세요 :)\n개발꿈나무 주혜린입니다.";
 const $txt = document.querySelector(".txt-title");
-let index = 0;
+const content = "안녕하세요 :)\n개발꿈나무 주혜린입니다.";
+let contentIndex = 0;
 
 let typing = function () {
-  let tmp = content[index++];
-  $txt.innerHTML += tmp === "\n" ? "<br />" : tmp;
-  if (index > content.length) {
+  $txt.innerHTML += content[contentIndex];
+  contentIndex++;
+  if (content[contentIndex] === "\n") {
+    $txt.innerHTML += "<br />";
+    contentIndex++;
+  }
+  if (contentIndex > content.length) {
     $txt.textContent = "";
-    index = 0;
+    contentIndex = 0;
   }
 };
 
@@ -64,40 +68,29 @@ init();
 const $modalBg = document.getElementsByClassName("modal-background");
 const $btnOpen = document.getElementsByClassName("btn-open");
 const $btnClose = document.getElementsByClassName("btn-close");
-let funcs = [];
 
 function modal(num) {
-  return function () {
-    $btnOpen[num].onclick = function () {
-      $modalBg[num].style.display = "flex";
-      document.body.style.overflow = "hidden";
-    };
-    $btnClose[num].onclick = function () {
-      $modalBg[num].style.display = "none";
-      document.body.style.overflow = "unset";
-    };
-  };
+  $btnOpen[num].addEventListener("click", () => {
+    $modalBg[num].style.display = "flex";
+    document.body.style.overflow = "hidden";
+  });
+  $btnClose[num].addEventListener("click", () => {
+    $modalBg[num].style.display = "none";
+    document.body.style.overflow = "unset";
+  });
 }
 
 for (let i = 0; i < $btnOpen.length; i++) {
-  funcs[i] = modal(i);
-}
-
-for (let i = 0; i < $btnOpen.length; i++) {
-  funcs[i]();
+  modal(i);
 }
 
 // 스크롤바
 let scrollTop = 0;
-let bar;
-
-window.onload = function () {
-  bar = document.getElementsByClassName("bar-ing")[0];
-};
+let bar = document.getElementsByClassName("bar-ing")[0];
 
 window.addEventListener(
   "scroll",
-  function () {
+  () => {
     scrollTop = document.documentElement.scrollTop;
     let per = Math.ceil(
       (scrollTop / (document.body.scrollHeight - window.outerHeight)) * 100
