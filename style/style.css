@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
 }
 .txt-title {
   width: 620px;
-  margin: 30px 0 40px;
+  margin-top: 30px;
   font-size: 55px;
   font-family: "GmarketBold";
   color: #6a75ca;
@@ -98,6 +98,7 @@ body::-webkit-scrollbar {
   border: solid 2px #6a75ca;
   color: white;
   font-size: 18px;
+  margin-top: 40px;
 }
 .btn-more:hover {
   background-color: white;
